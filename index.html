@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
@@ -12,33 +12,76 @@
         margin: 0;
         padding: 0;
     }
+
     .box {
         text-align: center;
     }
-    .shad {
-        font:900 150px 微软雅黑, Arial, sans-serif;
+
+    .ju {
+        font: 900 120px 微软雅黑, Arial, sans-serif;
         text-shadow: 20px 30px 15px #000;
     }
-    .redi {
-        width: 100px;
-        height: 100px;
-        background: #000;
-        border: 2px solid #f00;
-        border-radius: 100%;
-        /*border-radius: 100%;*/
-        margin: auto;
-        color: #0f0;
+
+    #hOut {
+        height: 120px;
+    }
+
+    #heart {
+        position: relative;
+        width: 200px;
+        height: 180px;
         line-height: 100px;
     }
+
+    #heart:before,
+    #heart:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 160px;
+        background: red;
+        -moz-border-radius: 100px 100px 0 0;
+        border-radius: 100px 100px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    #heart:after {
+        left: -100px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
 </style>
+
 <body>
     <div class="box">
-        <p class="shad">J U C H I N G</p>
-        <p class="shad">J U C H E</p>
-        <div class="redi">
-            我有圆角
+        <p class="ju juching">J U C H I N G</p>
+        <div id="hOut">
+            <span id="heart">
+          </span>
         </div>
+        <p class="ju juche">J U C H E</p>
     </div>
-    
+
 </body>
+
 </html>
+
