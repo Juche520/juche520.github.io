@@ -86,9 +86,6 @@
     #ds-thread #ds-reset .ds-powered-by {
         visibility: hidden !important;
     }
-    .del {
-      display: none;
-    }
 </style>
 
 <body>
@@ -101,32 +98,24 @@
         <p class="ju juche">J U C H E</p>
     </div>
 
-    <!-- 来必力City版安装代码 -->
+    <!-- LiveRe City install code -->
     <div id="lv-container" data-id="city" data-uid="MTAyMC8yNzExMC8zNjk5">
-        <script type="text/javascript">
-            (function(d, s) {
-                var j, e = d.getElementsByTagName(s)[0];
-
-                if (typeof LivereTower === 'function') {
-                    return;
-                }
-
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-
-                e.parentNode.insertBefore(j, e);
-                var liveLogo = document.getElementById('footer');
-                liveLogo.style.display = 'none';
-                liveLogo.className = 'del';
-            })(document, 'script');
-            var liveLogo = document.getElementById('footer');
-            liveLogo.style.display = 'none';
-            liveLogo.className = 'del';
-        </script>
-        <noscript> 为正常使用评论功能请激活JavaScript</noscript>
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+    
+           if (typeof LivereTower === 'function') { return; }
+    
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+    
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
     </div>
-    <!-- City版安装代码已完成 -->
+    <!-- completed City install code -->
 
     <!-- 多说评论框 start -->
     <div class="ds-thread" data-thread-key="https://juche520.github.io/" data-title="juche520" data-url="https://juche520.github.io/"></div>
@@ -147,14 +136,6 @@
         })();
     </script>
     <!-- 多说公共JS代码 end -->
-
-    <script>
-      (function(){
-        var liveLogo = document.getElementById('footer');
-        liveLogo.style.display = 'none';
-        liveLogo.className = 'del';
-      })()
-    </script>
 
 </body>
 
